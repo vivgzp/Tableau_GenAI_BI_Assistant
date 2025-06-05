@@ -1,8 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-# Import LangSmith tracing
-from langsmith import traceable
+# Import LangSmith tracing (debugging in LangSmith.com)
 from langsmith import Client
 
 # Langgraph packages
@@ -16,7 +15,12 @@ from utilities.prompt import AGENT_SYSTEM_PROMPT
 # Load environment
 load_dotenv()
 
+# Add LangSmith tracing
 langsmith_client = Client()
+
+config = {
+    "run_name": "Tableau Langchain Main.py"
+}
 
 # Initialize the Tableau data source tool
 analyze_datasource = initialize_simple_datasource_qa(
@@ -46,5 +50,5 @@ your_prompt = 'Show Me the Top Customers by Sales'
 
 # Run the agent
 messages = {"messages": [("user", your_prompt)]}
-print_stream(TableauLangChain.stream(messages, stream_mode="values"))
+print_stream(TableauLangChain.stream(messages, config=config, stream_mode="values"))
 

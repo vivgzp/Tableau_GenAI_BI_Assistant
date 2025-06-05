@@ -15,6 +15,13 @@ from utilities.prompt import AGENT_SYSTEM_PROMPT
 # Load environment variables
 load_dotenv()
 
+# Add LangSmith tracing
+langsmith_client = Client()
+
+config = {
+    "run_name": "Tableau Langchain Web_App.py"
+}
+
 # Create FastAPI app
 app = FastAPI(title="Tableau AI Chat", description="Simple AI chat interface for Tableau data")
 
@@ -77,7 +84,7 @@ def chat(request: ChatRequest) -> ChatResponse:
         
         # Get response from agent
         response_text = ""
-        for chunk in agent.stream(messages, stream_mode="values"):
+        for chunk in agent.stream(messages, config=config, stream_mode="values"):
             if 'messages' in chunk and chunk['messages']:
                 latest_message = chunk['messages'][-1]
                 if hasattr(latest_message, 'content'):
