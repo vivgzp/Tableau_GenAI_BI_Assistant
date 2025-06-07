@@ -144,6 +144,11 @@ On a dashboard page, in the bottom left menu drag a dashboard exention, local ex
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 🤝 Get Involved
+
+- Check out the [Tableau LangChain](https://github.com/tableau/tableau_langchain) repo for further developments
+- Join the [#tableau-langchain](https://tableau-datadev.slack.com/archives/C07LMAVG4N6) conversation on Slack. Sign up to the [DataDev Slack channel here.](https://tabsoft.co/JoinTableauDev)
+
 ## 🙏 Acknowledgments
 
 - [Tableau LangChain](https://github.com/tableau/tableau_langchain) the team developing the tools
