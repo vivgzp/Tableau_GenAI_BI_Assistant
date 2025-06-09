@@ -12,12 +12,18 @@ This repo is an implementation of [tableau_langchain](https://github.com/tableau
 
 ## 📋 Prerequisites
 
-Before you begin, ensure you have the following installed:
+Before you begin, ensure you have the following:
 
+- **Tableau Server Version 2025.1** or later OR **Tableau Cloud**, a free Tableau Cloud trial is available via the [Tableau Developer Program](https://www.tableau.com/en-gb/developer)
 - **Python 3.12+** - [Download Python](https://python.org/downloads/)
 - **Git** - [Download Git](https://git-scm.com/downloads/)
-- **Tableau Server/Cloud access** with appropriate permissions
-- **API credentials** for your chosen AI service (OpenAI, etc.)
+- **API credentials** for your chosen AI model (OpenAI, etc.)
+
+## ⚠️ Warning
+
+When using this code, data from Tableau will be sent to an external AI model (by default, OpenAI). For learning and testing, it is strongly recommended to use the Superstore dataset included with Tableau.
+
+If you need to process sensitive or proprietary information, consider configuring the tool to use a local AI model instead of an external service. This approach ensures your data remains within your organisation’s infrastructure and reduces the risk of data exposure.
 
 ## 🛠️ Installation
 
