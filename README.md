@@ -152,10 +152,6 @@ Once running, open your Tableau workbook, or the [Superstore Dashboard](dashboar
 On a dashboard page, in the bottom left menu drag a dashboard exention, local extension, and select [tableau_langchain.trex](dashboard_extension\tableau_langchain.trex) from the dashboard_extension folder. 
 
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🤝 Get Involved
 
 - Check out the [Tableau LangChain](https://github.com/tableau/tableau_langchain) repo for further developments
@@ -168,6 +164,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Tableau](https://tableau.com/) for the visualization platform
 - All contributors who have helped improve this project
 
----
+This project builds upon the open-source [Tableau LangChain Starter Kit](https://github.com/willsutton/tableau-langchain-starter-kit)  
+by **Will Sutton**
 
-**⭐ If you find this project helpful, please consider giving it a star!**
+Modifications and enhancements © 2025 Vivek Kushwaha.
