@@ -25,20 +25,11 @@ When using this code, data from Tableau will be sent to an external AI model (by
 
 If you need to process sensitive or proprietary information, consider configuring the tool to use a local AI model instead of an external service. This approach ensures your data remains within your organisation’s infrastructure and reduces the risk of data exposure.
 
-## 📺 Step Up Guide 
-
-<a href="https://www.youtube.com/watch?v=2sPJfxeoJ90">
-    <img src="https://img.youtube.com/vi/2sPJfxeoJ90/maxresdefault.jpg" width ="80%">
-  </a>
 
 ## 🛠️ Installation
 
 ### 1. Clone the Repository
 
-```bash
-git clone https://github.com//tableau-langchain-starter-kit.git
-cd tableau-langchain-starter-kit
-```
 
 ### 2. Create Virtual Environment
 
